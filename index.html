@@ -4,25 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script></script>
-    <style></style>
+    <script src="script.js"> </script>
+    <style src="style.css"></style>
+    <link rel="stylesheet" href="style.css" /> 
     <title>Level 1 Codebreaker</title>
+
 </head>
-<body onload = "initialize()">
+
+<body onload = "initialize();" onload = "afterGuess();">
     <h1> Codebreaker </h1>
     <div id = "timeCount"> Time </div>
-    <button onclick="inputGuess11()"> 1 </button>
-    <button onclick="inputGuess12()"> 1 </button>
-    <button onclick="inputGuess13()"> 1 </button>
+    <button onclick="inputGuess11();afterGuess();guessLog();timeCheck();"> 1 </button>
+    <button onclick="inputGuess12();afterGuess();guessLog();timeCheck();"> 2 </button>
+    <button onclick="inputGuess13();afterGuess();guessLog();timeCheck();"> 3 </button>
     <br>
-    <button onclick="inputGuess21()"> 2 </button>
-    <button onclick="inputGuess22()"> 2 </button>
-    <button onclick="inputGuess23()"> 2 </button>
+    <button onclick="inputGuess21();afterGuess();guessLog();timeCheck();"> 1 </button>
+    <button onclick="inputGuess22();afterGuess();guessLog();timeCheck();"> 2 </button>
+    <button onclick="inputGuess23();afterGuess();guessLog();timeCheck();"> 3 </button>
     <br>
-    <button onclick="inputGuess31()"> 3 </button>
-    <button onclick="inputGuess32()"> 3 </button>
-    <button onclick="inputGuess33()"> 3 </button>
+    <button onclick="inputGuess31();afterGuess();guessLog();timeCheck();"> 1 </button>
+    <button onclick="inputGuess32();afterGuess();guessLog();timeCheck();"> 2 </button>
+    <button onclick="inputGuess33();afterGuess();guessLog();timeCheck();"> 3 </button>
     <br>
-    <button onclick="checkGuess()">Check</button>
+    <button onclick="clearGuess()">Clear</button>
+    <p id = "guessLog"></p>
 </body>
 </html>
