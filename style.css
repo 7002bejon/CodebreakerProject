@@ -4,3 +4,8 @@ p {
 body {
     background-color: rgb(60, 218, 170)
 }
+button {
+    width: 100 px;
+    height: 60 px;
+
+}
